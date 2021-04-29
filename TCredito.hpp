@@ -1,8 +1,8 @@
 #ifndef TCREDITO_HPP
 #define TCREDITO_HPP
 
-#include "Vigencia.hpp"
 #include "Tarjeta.hpp"
+#include "Vigencia.hpp"
 
 class TCredito : public Tarjeta{
 
@@ -12,9 +12,8 @@ class TCredito : public Tarjeta{
 
 	public:
 		
-		TCredito(float elBalanceAlCorte, string elNumEnPlastico, 
-		         string elNumeroDeSeguridad, string elNumeroDeCuenta, 
-		Vigencia laVigencia);
+		TCredito();
+		TCredito(float elBalanceAlCorte, string elNumeroPlastico, string elNumeroSeguridad, string elNumeroCuenta, Vigencia laVigencia);
 		float getBalanceAlCorte();
 
 }; 

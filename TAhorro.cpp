@@ -1,17 +1,16 @@
 #include "TAhorro.hpp"
 
-TAhorro::TAhorro(float elBalanceAlCorte, string elNumEnPlastico, string elNumeroDeSeguridad, 
-	
-	string elNumeroDeCuenta, Vigencia laVigencia): Tarjeta(elNumEnPlastico, 
-	elNumeroDeSeguridad, elNumeroDeCuenta, laVigencia){
-		
-	balanceAlCorte = elBalanceAlCorte;
+TAhorro::TAhorro(){}
+
+TAhorro::TAhorro(float elBalanceAlCorte, string elNumeroPlastico, string elNumeroSeguridad, string elNumeroCuenta, Vigencia laVigencia) 
+         :Tarjeta(elNumeroPlastico, elNumeroSeguridad, elNumeroCuenta, laVigencia){
+
+    balanceAlCorte = elBalanceAlCorte;
 
 }//Fin TAhorro::TAhorro
 
-
 float TAhorro::getBalanceAlCorte(){
 
-	return balanceAlCorte;
+    return balanceAlCorte;
 
-}
+}//Fin TAhorro::getBalanceAlCorte

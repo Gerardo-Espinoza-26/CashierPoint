@@ -1,8 +1,8 @@
 #ifndef TDEBITO_HPP
 #define TDEBITO_HPP
 
-#include "Vigencia.hpp"
 #include "Tarjeta.hpp"
+#include "Vigencia.hpp"
 
 class TDebito : public Tarjeta{
 
@@ -12,9 +12,8 @@ class TDebito : public Tarjeta{
 
 	public:
 		
-		TDebito(float elBalanceAlCorte, string elNumEnPlastico, 
-		         string elNumeroDeSeguridad, string elNumeroDeCuenta, 
-		Vigencia laVigencia);
+		TDebito();
+		TDebito(float elBalanceAlCorte, string elNumeroPlastico, string elNumeroSeguridad, string elNumeroCuenta, Vigencia laVigencia);
 		float getBalanceAlCorte();
 
 }; 

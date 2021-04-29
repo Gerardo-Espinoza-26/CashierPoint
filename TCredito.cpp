@@ -1,17 +1,16 @@
 #include "TCredito.hpp"
 
-TCredito::TCredito(float elBalanceAlCorte, string elNumEnPlastico, string elNumeroDeSeguridad, 
-	
-	string elNumeroDeCuenta, Vigencia laVigencia): Tarjeta(elNumEnPlastico, 
-	elNumeroDeSeguridad, elNumeroDeCuenta, laVigencia){
-		
-	balanceAlCorte = elBalanceAlCorte;
+TCredito::TCredito(){}
+
+TCredito::TCredito(float elBalanceAlCorte, string elNumeroPlastico, string elNumeroSeguridad, string elNumeroCuenta, Vigencia laVigencia) 
+         :Tarjeta(elNumeroPlastico, elNumeroSeguridad, elNumeroCuenta, laVigencia){
+
+    balanceAlCorte = elBalanceAlCorte;
 
 }//Fin TCredito::TCredito
 
-
 float TCredito::getBalanceAlCorte(){
 
-	return balanceAlCorte;
+    return balanceAlCorte;
 
-}
+}//Fin TCredito::getBalanceAlCorte

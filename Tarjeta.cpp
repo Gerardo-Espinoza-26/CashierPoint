@@ -1,40 +1,30 @@
 #include "Tarjeta.hpp"
 
-Tarjeta::Tarjeta() {}
+Tarjeta::Tarjeta(){}
 
-Tarjeta::Tarjeta(string elNumeroDePlastico,  string elNumeroDeSeguridad, string elNumeroDeCuenta, Vigencia laVigencia){
+Tarjeta::Tarjeta(string elNumeroPlastico, string elNumeroSeguridad, string elNumeroCuenta, Vigencia laVigencia){
 
-	numeroDePlastico = elNumeroDePlastico;
-	numeroDeSeguridad = elNumeroDeSeguridad;
-	numeroDeCuenta = elNumeroDeCuenta;
-	vigencia = laVigencia;
+    numeroPlastico = elNumeroPlastico;
+    numeroSeguridad = elNumeroSeguridad;
+    numeroCuenta = elNumeroCuenta;
+    vigencia = laVigencia;
 
-}
+}//Fin Tarjeta::Tarjeta
 
-string Tarjeta::getNumDePlastico(){
+string Tarjeta::getNumeroPlastico(){
 
-	return numeroDePlastico;
+    return numeroPlastico;
 
-}
+}//Fin Tarjeta::getNumeroPlastico
 
+string Tarjeta::getNumeroSeguridad(){
 
-string Tarjeta::getNumDeSeguridad(){
+    return numeroSeguridad;
 
-	return numeroDeSeguridad;
+}//Fin Tarjeta::getNumeroSeguridad
 
-}	
+string Tarjeta::getNumeroCuenta(){
 
+    return numeroCuenta;
 
-string Tarjeta::getNumDeCuenta(){
-
-	return numeroDeCuenta;
-
-}
-
-Vigencia Tarjeta::getVigencia(){
-
-	return vigencia;
-
-}
-
-
+}//Fin Tarjeta::getNumeroCuenta

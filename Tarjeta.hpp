@@ -1,5 +1,6 @@
 #ifndef TARJETA_HPP
 #define TARJETA_HPP
+
 #include <string>
 #include "Vigencia.hpp"
 
@@ -7,21 +8,22 @@ using namespace std;
 
 class Tarjeta{
 
-	private:
+    private:
 
-		string numeroDePlastico;
-		string numeroDeSeguridad;
-		string numeroDeCuenta;
-		Vigencia vigencia;
+        string numeroPlastico;
+        string numeroSeguridad;
+        string numeroCuenta;
+        Vigencia vigencia;
 
-	public:
+    public:
 
-	    Tarjeta();
-        Tarjeta(string numeroDePlastico, string numeroDeSeguridad,
-		        string numeroDeCuenta, Vigencia laVigencia);
-		string getNumDePlastico();
-		string getNumDeSeguridad();
-		string getNumDeCuenta();
-		Vigencia getVigencia();
-};
+        Tarjeta();                                                       
+        Tarjeta(string elNumeroPlastico, string elNumeroSeguridad, string elNumeroCuenta, Vigencia laVigencia);
+        string getNumeroPlastico();
+        string getNumeroSeguridad();
+        string getNumeroCuenta();
+        Vigencia getVigencia();
+
+};//Fin class Tarjeta
+
 #endif

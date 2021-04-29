@@ -27,9 +27,3 @@ string Cliente::getDomicilio(){
 	return domicilio;
 
 }
-
-void Cliente::setDomicilio(string elDomicilio){
-
-	domicilio = elDomicilio;
-
-}

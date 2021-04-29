@@ -1,17 +1,16 @@
 #include "TDebito.hpp"
 
-TDebito::TDebito(float elBalanceAlCorte, string elNumEnPlastico, string elNumeroDeSeguridad, 
-	
-	string elNumeroDeCuenta, Vigencia laVigencia): Tarjeta(elNumEnPlastico, 
-	elNumeroDeSeguridad, elNumeroDeCuenta, laVigencia){
-		
-	balanceAlCorte = elBalanceAlCorte;
+TDebito::TDebito(){}
 
-}//Fin TCredito::TCredito
+TDebito::TDebito(float elBalanceAlCorte, string elNumeroPlastico, string elNumeroSeguridad, string elNumeroCuenta, Vigencia laVigencia) 
+         :Tarjeta(elNumeroPlastico, elNumeroSeguridad, elNumeroCuenta, laVigencia){
 
+    balanceAlCorte = elBalanceAlCorte;
+
+}//Fin TDebito::TDebito
 
 float TDebito::getBalanceAlCorte(){
 
-	return balanceAlCorte;
+    return balanceAlCorte;
 
-}
+}//Fin TDebito::getBalanceAlCorte

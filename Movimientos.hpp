@@ -1,31 +1,22 @@
 #ifndef MOVIMIENTOS_HPP
 #define MOVIMIENTOS_HPP
 
-#include "Cliente.hpp"
-#include "Tarjeta.hpp"
 #include <string>
+#include "Datos.hpp"
 
 using namespace std;
 
-class Movimientos {
-	
-	private: 
+class Movimientos : public Datos{
 
-        string dia;
-		string mes;
-		string anio;
-		Cliente cliente;
-		Tarjeta tarjeta;
+    private:
 
-	public:
-		Movimientos();
-		Movimientos(string elDia, string elMes, 
-		            string elAnio, Cliente elCliente, Tarjeta laTarjeta);
-		string getDia();
-		string getMes();
-		string getAnio();
-		Cliente getCliente();
-		Tarjeta getTarjeta();
+        float cantidad;
+
+    public:
+
+        Movimientos();
+        Movimientos(float laCantidad, string elNombre, string elNumeroDeCuenta, string laFecha);
+        float getCantidad();
 
 };
 #endif

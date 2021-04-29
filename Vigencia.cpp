@@ -4,19 +4,19 @@ Vigencia::Vigencia(){}
 
 Vigencia::Vigencia(string elMes, string elAnio){
 
-	mes = elMes;
-	anio = elAnio;
+    mes = elMes;
+    anio = elAnio;
 
-}
+}//Fin Vigencia::Vigencia
 
 string Vigencia::getMes(){
 
-	return mes;
+    return mes;
 
-}
+}//Fin Vigencia::getMes
 
 string Vigencia::getAnio(){
 
-	return anio;
+    return anio;
 
-}
+}//Fin Vigencia::getAnio

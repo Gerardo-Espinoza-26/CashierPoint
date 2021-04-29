@@ -1,22 +1,23 @@
 #ifndef VIGENCIA_HPP
 #define VIGENCIA_HPP
+
 #include <string>
 
 using namespace std;
 
 class Vigencia{
 
-	private:
+    private:
 
-		string mes;
-		string anio;
+        string mes;
+        string anio;
 
-	public:
+    public:
 
-		Vigencia();
-		Vigencia(string elMes, string elAnio);
-		string getMes();
-		string getAnio();
+        Vigencia();
+        Vigencia(string elMes, string elAnio);
+        string getMes();
+        string getAnio();
 
-};
+};//Fin class Vigencia
 #endif

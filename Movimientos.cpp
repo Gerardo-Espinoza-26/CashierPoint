@@ -1,43 +1,16 @@
 #include "Movimientos.hpp"
 
-Movimientos::Movimientos() {}
+Movimientos::Movimientos(){}
 
-Movimientos::Movimientos(string elDia, string elMes, string elAnio, Cliente elCliente, Tarjeta laTarjeta){
+Movimientos::Movimientos(float laCantidad, string elNombre, string elNumeroDeCuenta, string laFecha) 
+            :Datos(elNombre, elNumeroDeCuenta, laFecha){
 
-	dia = elDia;
-	mes = elMes;
-	anio = elAnio;
-	cliente = elCliente;
-    tarjeta = laTarjeta;
+    cantidad = laCantidad;
 
 }//Fin Movimientos::Movimientos
 
-string Movimientos::getDia(){
+float Movimientos::getCantidad(){
 
-    return dia;
+    return cantidad;
 
-}//Fin Movimientos::getDia
-
-string Movimientos::getMes(){
-
-    return mes;
-
-}//Fin Movimientos::getMes
-
-string Movimientos::getAnio(){
-
-    return anio;
-
-}//Fin Movimientos::getAnio
-
-Cliente Movimientos::getCliente(){
-
-    return cliente;
-
-}//Fin Movimientos Cliente::getCliente
-
-Tarjeta Movimientos::getTarjeta(){
-
-    return tarjeta;
-
-}//Fin Movimientos Tarjeta::getNumDeCuenta
+}//int Movimientos::getCantidad

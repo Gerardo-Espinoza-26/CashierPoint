@@ -1,12 +1,12 @@
 #include "Cajero.hpp"
 
-Cajero::Cajero() {}
+Cajero::Cajero(){}
 
-Cajero::Cajero(string elCodigoUnico, string elNumeroDeSucursal, string elNombreDelBanco){
+Cajero::Cajero(string elCodigoUnico, string elNumeroSucursal, string elNombreBanco){
 
     codigoUnico = elCodigoUnico;
-    numeroDeSucursal = elNumeroDeSucursal;
-    nombreDelBanco = elNombreDelBanco;
+    numeroSucursal = elNumeroSucursal;
+    nombreBanco = elNombreBanco;
 
 }//Fin Cajero::Cajero
 
@@ -14,16 +14,16 @@ string Cajero::getCodigoUnico(){
 
     return codigoUnico;
 
-}//Fin Cajero::getCodigo
+}//Fin string Cajero::getCodigoUnico
 
 string Cajero::getNumeroSucursal(){
 
-    return numeroDeSucursal;
+    return numeroSucursal;
 
-}//Fin Cajero::getCodigo
+}//Fin string Cajero::getNumeroSucursal
 
 string Cajero::getNombreBanco(){
 
-    return nombreDelBanco;
+    return nombreBanco;
 
-}//Fin Cajero::getCodigo
+}//Fin string Cajero::getNombreBanco

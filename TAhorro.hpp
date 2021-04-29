@@ -1,8 +1,8 @@
 #ifndef TAHORRO_HPP
 #define TAHORRO_HPP
 
-#include "Vigencia.hpp"
 #include "Tarjeta.hpp"
+#include "Vigencia.hpp"
 
 class TAhorro : public Tarjeta{
 
@@ -12,9 +12,8 @@ class TAhorro : public Tarjeta{
 
 	public:
 		
-		TAhorro(float elBalanceAlCorte, string elNumEnPlastico, 
-		         string elNumeroDeSeguridad, string elNumeroDeCuenta, 
-		Vigencia laVigencia);
+		TAhorro();
+		TAhorro(float elBalanceAlCorte, string elNumeroPlastico, string elNumeroSeguridad, string elNumeroCuenta, Vigencia laVigencia);
 		float getBalanceAlCorte();
 
 }; 
