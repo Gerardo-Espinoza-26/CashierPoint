@@ -1,15 +1,16 @@
 #include "CuentaAcceso.hpp"
 
-VCliente::VCliente() {}
+CuentaAcceso::CuentaAcceso(){}
 
-VCliente::VCliente(int elPin){
+CuentaAcceso::CuentaAcceso(string elPassword, string elNombre, string elRFC, string elDomicilio)
+             :Cliente(elNombre, elRFC, elDomicilio) {
 
-    pin = elPin;
+    password = elPassword;
 
-}//Fin VCliente::VCliente
+}//Fin CuentaAcceso::CuentaAcceso
 
-int VCliente::getPin(){
+string CuentaAcceso::getPassword(){
 
-    return pin;
+    return password;
 
-}//Fin int VCliente::getPin
+}//Fin CuentaAcceso::getPassword

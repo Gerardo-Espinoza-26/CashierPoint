@@ -1,6 +1,7 @@
 #include "Cajero.cpp"
 #include "Cliente.cpp"
 #include "Cuenta.cpp"
+#include "CuentaAcceso.cpp"
 #include "Datos.cpp"
 #include "Deposito.cpp"
 #include "HistorialDeMovimientos.cpp"
@@ -20,6 +21,8 @@ int main(void){
     Cajero cajero("2165", "3617441523", "BBVA Bancomer");
 
     Cliente cl1("Gerardo Espinoza", "012605", "Juan Escutia #1741");
+
+    CuentaAcceso CA("1234", "Gerardo Espinoza", "012605", "Juan Escutia #1741");
 
     Datos DC("Gerardo Espinoza", "12345", "13:05 - 26/01/20");
 
@@ -71,7 +74,19 @@ int main(void){
     cout << "|                                                                |" << endl;
 
     cout << "------------------------------------------------------------------" << endl;
-                                                      
+
+    cout << "-                           Cuenta De Acceso                     -" << endl;
+
+	cout << "------------------------------------------------------------------" << endl;
+
+    cout << "|                                                                |" << endl;
+    cout << "|            Nombre Del Cliente:      " << CA.getNombre() << "           |" << endl;
+    cout << "|            Contrasena:              " << CA.getPassword() << "                       |" << endl;
+
+    cout << "|                                                                |" << endl;
+
+    cout << "------------------------------------------------------------------" << endl;
+
     cout << "-             " << cl1.getNombre() << " - Tarjeta De Credito              -" <<endl;
 
 	cout << "------------------------------------------------------------------" << endl;

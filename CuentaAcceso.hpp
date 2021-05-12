@@ -1,21 +1,23 @@
 #ifndef CUENTAACCESO_HPP
 #define CUENTAACCESO_HPP
 
-#include<string>
+#include <string>
+#include "Cliente.hpp"
 
 using namespace std;
 
-class VCliente {
-	
-	private: 
+class CuentaAcceso : public Cliente {
 
-		int pin;
+    private:
 
-	public:
-    
-		VCliente();
-		VCliente(int elPin);
-		int getPin();
+        string password;
 
-};
+    public:
+
+        CuentaAcceso();
+        CuentaAcceso(string elPassword, string elNombre, string elRFC, string elDomicilio);
+        string getPassword();
+
+};//Fin class CuentaAcceso
+
 #endif
